@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+    <item android:title="@string/navCategory1">
+        <menu>
+            <item
+                android:title="test example1"
+                android:id="@+id/nav_item1"/>
+            <item
+                android:title="test example2"
+                android:id="@+id/nav_item2"/>
+            <item
+                android:title="test example3"
+                android:id="@+id/nav_item3"/>
+            <item
+                android:title="test example4"
+                android:id="@+id/nav_item4"/>
+        </menu>
+    </item>
+    <item android:title="@string/navCategory2">
+        <menu>
+            <item
+                android:title="О магазине"
+                android:id="@+id/nav_item5"
+                android:icon="@drawable/ic_info"/>
+        </menu>
+    </item>
+
+</menu>

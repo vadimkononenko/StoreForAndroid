@@ -22,4 +22,18 @@
         android:layout_above="@+id/bottom_navigation_view"
         app:navGraph="@navigation/navigation" />
 
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:menu="@menu/navigation_menu"
+            app:headerLayout="@layout/navigation_header"/>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
 </RelativeLayout>
