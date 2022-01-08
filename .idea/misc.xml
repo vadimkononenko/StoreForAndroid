@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Alexey/AndroidStudioProjects/StoreForAndroid/app/src/main/res/drawable/ic_avatar.xml" value="0.2175925925925926" />
+        <entry key="..\:/Users/Alexey/AndroidStudioProjects/StoreForAndroid/app/src/main/res/drawable/ic_cart.xml" value="0.2175925925925926" />
+        <entry key="..\:/Users/Alexey/AndroidStudioProjects/StoreForAndroid/app/src/main/res/drawable/ic_catalog.xml" value="0.2175925925925926" />
+        <entry key="..\:/Users/Alexey/AndroidStudioProjects/StoreForAndroid/app/src/main/res/drawable/ic_home.xml" value="0.2175925925925926" />
+        <entry key="..\:/Users/Alexey/AndroidStudioProjects/StoreForAndroid/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Alexey/AndroidStudioProjects/StoreForAndroid/app/src/main/res/layout/navigation_header.xml" value="0.536" />
+        <entry key="..\:/Users/Alexey/AndroidStudioProjects/StoreForAndroid/app/src/main/res/menu/navigation_menu.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/konon/AndroidStudioProjects/StoreForAndroid/app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="..\:/Users/konon/AndroidStudioProjects/StoreForAndroid/app/src/main/res/layout/fragment_blank.xml" value="0.5208333333333334" />
         <entry key="..\:/Users/konon/AndroidStudioProjects/StoreForAndroid/app/src/main/res/layout/fragment_cart.xml" value="0.5208333333333334" />
