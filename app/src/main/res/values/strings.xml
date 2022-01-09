@@ -1,7 +1,10 @@
 <resources>
-    <string name="app_name">StoreForAndroid</string>
+    <string name="app_name">VLK STORE</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="navCategory1">Примеры кнопок</string>
     <string name="navCategory2">Инфо</string>
+    <string name="catalog_menu_title">Каталог</string>
+    <string name="home_menu_title">Главная</string>
+    <string name="cart_menu_title">Корзина</string>
 </resources>
