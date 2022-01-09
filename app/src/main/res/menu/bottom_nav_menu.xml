@@ -2,14 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/catalogFragment"
+        android:orderInCategory="1"
         android:icon="@drawable/ic_catalog"
-        android:title="Каталог"/>
+        android:title="@string/catalog_menu_title"/>
     <item
         android:id="@+id/homeFragment"
+        android:orderInCategory="2"
         android:icon="@drawable/ic_home"
-        android:title="Главная"/>
+        android:title="@string/home_menu_title"/>
     <item
         android:id="@+id/cartFragment"
+        android:orderInCategory="3"
         android:icon="@drawable/ic_cart"
-        android:title="Корзина"/>
+        android:title="@string/cart_menu_title"/>
 </menu>
