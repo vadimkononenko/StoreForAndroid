@@ -7,4 +7,5 @@
     <string name="catalog_menu_title">Каталог</string>
     <string name="home_menu_title">Главная</string>
     <string name="cart_menu_title">Корзина</string>
+    <string name="looking_for">Я ищу..</string>
 </resources>
