@@ -3,29 +3,55 @@ package com.ua.storeforandroid.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.ua.storeforandroid.R
+import com.ua.storeforandroid.databinding.PhoneItemBinding
+import com.ua.storeforandroid.model.PhoneModel
 
-internal class PhoneAdapter(private var itemsList: List<String>) :
-    RecyclerView.Adapter<PhoneAdapter.MyViewHolder>() {
-    internal inner class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        var imageBook: ImageView = view.findViewById(R.id.imageBook)
-        var itemTextView: TextView = view.findViewById(R.id.itemTextView)
+class PhoneAdapter(private val listener: onItemClickListenerPhone) :
+    RecyclerView.Adapter<PhoneAdapter.PhoneHolder>() {
+    val phonesList = arrayListOf<PhoneModel>()
+
+    inner class PhoneHolder(item: View) : RecyclerView.ViewHolder(item), View.OnClickListener {
+        var binding = PhoneItemBinding.bind(item)
+        fun bind(phoneModel: PhoneModel) = with(binding) {
+            tvPhoneTitle.text = phoneModel.phoneTitle
+            tvPhonePrice.text = phoneModel.phonePrice.toString()
+            imageBook.setImageResource(R.drawable.prod_img_example)
+        }
+
+        init {
+            item.setOnClickListener(this)
+        }
+
+        override fun onClick(v: View?) {
+            val position: Int = adapterPosition
+            if (position != RecyclerView.NO_POSITION) {
+                listener.onItemClick(position)
+            }
+        }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
+    interface onItemClickListenerPhone {
+        fun onItemClick(position: Int)
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PhoneHolder {
         val itemView = LayoutInflater.from(parent.context)
             .inflate(R.layout.phone_item, parent, false)
-        return MyViewHolder(itemView)
+        return PhoneHolder(itemView)
     }
-    override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        val item = itemsList[position]
-        holder.itemTextView.text = item
-        holder.imageBook.setImageResource(R.drawable.prod_img_example)
+
+    override fun onBindViewHolder(holder: PhoneHolder, position: Int) {
+        holder.bind(phonesList[position])
     }
+
     override fun getItemCount(): Int {
-        return itemsList.size
+        return phonesList.size
+    }
+
+    fun addPhone(phoneModel: PhoneModel) {
+        phonesList.add(phoneModel)
+        notifyDataSetChanged()
     }
 }
