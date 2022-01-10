@@ -9,8 +9,8 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.ua.storeforandroid.CartAdapter
-import com.ua.storeforandroid.Plant
+import com.ua.storeforandroid.adapter.CartAdapter
+import com.ua.storeforandroid.model.Plant
 import com.ua.storeforandroid.R
 
 class CartFragment : Fragment() {

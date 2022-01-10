@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.ua.storeforandroid.PhoneAdapter
+import com.ua.storeforandroid.adapter.PhoneAdapter
 import com.ua.storeforandroid.R
 
 class HomeFragment : Fragment() {

@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.myapplication.CatalogAdapter
+import com.ua.storeforandroid.adapter.CatalogAdapter
 import com.ua.storeforandroid.R
 
 class CatalogFragment : Fragment() {
