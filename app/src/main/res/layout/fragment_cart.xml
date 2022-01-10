@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".fragments.CartFragment">
 
     <TextView
@@ -13,7 +14,7 @@
         android:layout_marginBottom="4dp"
         android:fontFamily="cursive"
         android:textColor="#125A14"
-        android:textSize="40sp"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
