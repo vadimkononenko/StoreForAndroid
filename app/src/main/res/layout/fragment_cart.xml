@@ -13,7 +13,7 @@
         android:layout_marginBottom="4dp"
         android:fontFamily="cursive"
         android:textColor="#125A14"
-        android:textSize="40sp"
+        android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

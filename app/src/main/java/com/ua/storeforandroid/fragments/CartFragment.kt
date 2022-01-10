@@ -46,7 +46,7 @@ class CartFragment : Fragment() {
                 val plant = Plant(titleList[index], priceList[index])
                 adapter.addPlant(plant)
                 tPrice += priceList[index]
-                total.text = "Цена: $tPrice"
+                total.text = "К оплате: $tPrice"
                 index++
 
             }
