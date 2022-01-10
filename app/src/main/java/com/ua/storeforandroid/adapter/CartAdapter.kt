@@ -1,9 +1,11 @@
-package com.ua.storeforandroid
+package com.ua.storeforandroid.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.ua.storeforandroid.model.Plant
+import com.ua.storeforandroid.R
 import com.ua.storeforandroid.databinding.CartItemBinding
 
 class CartAdapter : RecyclerView.Adapter<CartAdapter.PlantHolder>() {

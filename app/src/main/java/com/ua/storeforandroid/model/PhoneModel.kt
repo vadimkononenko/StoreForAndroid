@@ -1,4 +1,4 @@
-package com.ua.storeforandroid
+package com.ua.storeforandroid.model
 
 data class PhoneModel(
     val id: Int,
